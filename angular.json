@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "EE-template"
+    }
+  },
+  "defaultProject": "EE-template",
+  "cli": {
+    "analytics": false
+  }
 }
