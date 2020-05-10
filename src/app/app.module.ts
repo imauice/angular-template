@@ -9,6 +9,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatIconModule} from '@angular/material/icon';
 import localeES from '@angular/common/locales/es';
 import {registerLocaleData} from '@angular/common';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 registerLocaleData(localeES, 'es');
 
@@ -21,6 +22,7 @@ registerLocaleData(localeES, 'es');
     AppRoutingModule,
     BrowserAnimationsModule,
     CoreModule,
+    FlexLayoutModule,
     MatToolbarModule,
     MatSlideToggleModule,
     MatIconModule
