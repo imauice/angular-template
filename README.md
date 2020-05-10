@@ -68,6 +68,7 @@ ng serve --o --host 0.0.0.0
 Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 5. Deploy
+<br><br>
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 <!-- USAGE EXAMPLES -->
