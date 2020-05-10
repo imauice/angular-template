@@ -65,6 +65,11 @@ npm install
 ng serve --o --host 0.0.0.0
 ```
 
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+5. Deploy
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
 <!-- USAGE EXAMPLES -->
 ## Usage
 
@@ -73,7 +78,7 @@ analytics data.
 
 <!--Images here-->
 
-You can go to sign in or sign up page with this route <!--route here-->
+You can go to sign in or sign up page with these routes <!--route here-->
 
 <!-- CONTRIBUTING -->
 ## Contributing
