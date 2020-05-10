@@ -105,6 +105,9 @@ $light-primary: mat-palette($light-primary-palette);
 $light-accent: mat-palette($light-accent-palette, A200, A100, A400);
 $light-warn: mat-palette($light-warn-palette);
 
+$light-theme: mat-light-theme($light-primary, $light-accent, $light-warn);
+$light-theme: map_merge($light-theme, (background: map_merge(map-get($light-theme, background), (background: #FFFFFF))));
+
 $dark-primary-palette: (
   50 : #f7f0ff,
   100 : #ebdbfe,
@@ -208,10 +211,15 @@ $dark-primary: mat-palette($dark-primary-palette);
 $dark-accent: mat-palette($dark-accent-palette, A200, A100, A400);
 $dark-warn: mat-palette($dark-warn-palette);
 
-$light-theme: mat-light-theme($light-primary, $light-accent, $light-warn);
 $dark-theme: mat-dark-theme($dark-primary, $dark-accent, $dark-warn);
+$dark-theme: map_merge($dark-theme, (background: map_merge(map-get($dark-theme, background), (background: #121212))));
 
 @include angular-material-theme($light-theme);
+
+.dark-theme {
+  @include angular-material-theme($dark-theme);
+}
+
 
 html {
   box-sizing: border-box;

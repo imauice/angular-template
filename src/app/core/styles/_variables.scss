@@ -2,10 +2,8 @@
 
 $light-primary: mat-color(map-get($light-theme, primary));
 $light-accent: mat-color(map-get($light-theme, accent));
-$light-error: mat-color(map-get($light-theme, warn));
-$light-background: #FFFFFF;
+$light-warn: mat-color(map-get($light-theme, warn));
 
 $dark-primary: mat-color(map-get($dark-theme, primary));
 $dark-accent: mat-color(map-get($dark-theme, accent));
-$dark-error: mat-color(map-get($dark-theme, warn));
-$dark-background: #121212;
+$dark-warn: mat-color(map-get($dark-theme, warn));
