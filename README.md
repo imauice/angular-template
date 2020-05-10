@@ -1,27 +1,100 @@
+<a href="https://danicaliforrnia.github.io/portfolio/">
+    <img src="https://danicaliforrnia.github.io/portfolio/assets/images/logo.png"
+    alt="Logo" height="100">
+</a>
+
 # EETemplate
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
+<!-- TABLE OF CONTENTS -->
+## Table of Contents
 
-## Development server
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Acknowledgements](#acknowledgements)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-## Build
+Enterprise Edition Template with a modern dashboard and other features.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Built With
+This template was built with:
 
-## Running unit tests
+* [Angular 9](https://material.angular.io/)
+* [Angular Material](https://material.angular.io/)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<!-- GETTING STARTED -->
+## Getting Started
 
-## Running end-to-end tests
+To get a local copy up and running follow these simple example steps.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### Prerequisites
 
-## Further help
+You should have node.js and angular CLI installed.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+After node is installed run 
+
+* Angular CLI
+```sh
+npm install -g @angular/cli
+```
+
+### Installation
+
+1. Clone the repo
+```sh
+git clone https://github.com/danicaliforrnia/EE-template.git
+```
+3. Install NPM packages
+```sh
+npm install
+```
+4. Run
+```sh
+ng serve --o --host 0.0.0.0
+```
+
+<!-- USAGE EXAMPLES -->
+## Usage
+
+This template has a dashboard as default landing page. This dashboard display modern charts with 
+analytics data.
+
+<!--Images here-->
+
+You can go to sign in or sign up page with this route <!--route here-->
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/amazing_feature`)
+3. Commit your Changes (`git commit -m 'My new amazing feature'`)
+4. Push to the Branch (`git push origin feature/amazing_feature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License.
+
+<!-- CONTACT -->
+## Contact
+
+Daniel Stefanelli - 
+[@danicalifoornia](https://twitter.com/danicalifoornia) - 
+[daniel-stefanelli Linkedin](https://www.linkedin.com/in/daniel-stefanelli/)
+hernandezpdaniele@gmail.com
