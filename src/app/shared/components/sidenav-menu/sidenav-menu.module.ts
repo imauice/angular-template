@@ -5,6 +5,9 @@ import {SidenavMenuComponent} from './sidenav-menu.component';
 
 @NgModule({
   declarations: [SidenavMenuComponent],
+  exports: [
+    SidenavMenuComponent
+  ],
   imports: [
     CommonModule
   ]
