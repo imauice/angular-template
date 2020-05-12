@@ -1,18 +1,1 @@
-<div [ngClass]="{'dark-theme': isDarkTheme | async}">
-  <div class="mat-app-background">
-    <mat-toolbar color="primary">
-      <mat-toolbar-row style="width:100%">
-        <mat-icon>brightness_5</mat-icon>
-        <mat-slide-toggle (change)="toggleDarkTheme($event.checked)" [checked]="isDarkTheme | async">
-        </mat-slide-toggle>
-        <mat-icon>nights_stay</mat-icon>
-      </mat-toolbar-row>
-    </mat-toolbar>
-  </div>
-</div>
-
-<div [ngClass]="{'dark-theme': isDarkTheme | async}" style="height: 100vh">
-  <div class="mat-app-background" style="height: 100vh">
-    <router-outlet></router-outlet>
-  </div>
-</div>
+<router-outlet></router-outlet>

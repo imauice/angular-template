@@ -32,6 +32,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
+import {HomeToolbarModule} from './components/home-toolbar/home-toolbar.module';
+import {SidenavMenuModule} from './components/sidenav-menu/sidenav-menu.module';
 
 @NgModule({
   imports: [
@@ -102,7 +104,9 @@ import {RouterModule} from '@angular/router';
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatStepperModule
+    MatStepperModule,
+    HomeToolbarModule,
+    SidenavMenuModule
   ],
   declarations: []
 })
