@@ -1,6 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {Observable} from 'rxjs';
-import {ThemeService} from './core/services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -9,16 +7,10 @@ import {ThemeService} from './core/services/theme.service';
 })
 export class AppComponent implements OnInit {
   title = 'EE-template';
-  isDarkTheme: Observable<boolean>;
 
-  constructor(private themeService: ThemeService) {
+  constructor() {
   }
 
   ngOnInit() {
-    this.isDarkTheme = this.themeService.isDarkTheme;
-  }
-
-  toggleDarkTheme(checked: boolean) {
-    this.themeService.setDarkTheme(checked);
   }
 }

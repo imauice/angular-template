@@ -1,0 +1,12 @@
+.sidenav-container {
+  flex: 1;
+}
+
+.is-mobile .sidenav-container {
+  flex: 1 0 auto;
+  padding-top: 56px;
+}
+
+.sidebar {
+  width: 150px !important;
+}

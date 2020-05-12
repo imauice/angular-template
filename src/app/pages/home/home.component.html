@@ -1,1 +1,28 @@
-<p>home works!</p>
+<div [class.is-mobile]="isMobile" [ngClass]="{'dark-theme': isDarkTheme | async}" class="aspect-ratio--object"
+     fxLayout="column">
+
+  <app-home-toolbar (signOut)="signOut()" (toggle)="snav.toggle()" [isMobile]="isMobile" [name]="name">
+  </app-home-toolbar>
+
+  <mat-sidenav-container class="sidenav-container">
+
+    <mat-sidenav #snav [fixedInViewport]="isMobile"
+                 [mode]="isMobile ? 'over' : 'side'" class="mat-elevation-z8 sidebar" fixedTopGap="56" opened>
+      <app-sidenav-menu [menus]="menus" class="content mat-app-background"></app-sidenav-menu>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="content mat-app-background" fxLayout="column">
+      <div class="w-95" fxFlex fxFlexAlign="center">
+        <router-outlet></router-outlet>
+      </div>
+
+      <div class="pa2 f7">
+        <span> &#169; EE Template | All rights reserved </span>
+        <span fxFlex></span>
+        <span>{{version}}</span>
+      </div>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+</div>
+
