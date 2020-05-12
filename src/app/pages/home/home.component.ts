@@ -12,7 +12,8 @@ import {ThemeService} from '../../core/services/theme.service';
 export class HomeComponent implements OnInit {
   version = '1.0.0';
   isMobile = false;
-  name: string;
+  githubId = 'danicaliforrnia';
+  name = 'Daniel Stefanelli';
   menus = [];
   isDarkTheme: Observable<boolean>;
 
