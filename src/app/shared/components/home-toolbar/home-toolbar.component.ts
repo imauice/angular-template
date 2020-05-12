@@ -10,6 +10,7 @@ import {ThemeService} from '../../../core/services/theme.service';
 export class HomeToolbarComponent implements OnInit {
   @Output() toggle = new EventEmitter<void>();
   @Output() signOut = new EventEmitter<void>();
+  @Input() githubId: string;
   @Input() name: string;
   @Input() isMobile: boolean;
   isDarkTheme: Observable<boolean>;

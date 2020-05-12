@@ -1,7 +1,8 @@
 <div [class.is-mobile]="isMobile" [ngClass]="{'dark-theme': isDarkTheme | async}" class="aspect-ratio--object"
      fxLayout="column">
 
-  <app-home-toolbar (signOut)="signOut()" (toggle)="snav.toggle()" [isMobile]="isMobile" [name]="name">
+  <app-home-toolbar (signOut)="signOut()" (toggle)="snav.toggle()" [githubId]="githubId" [isMobile]="isMobile"
+                    [name]="name">
   </app-home-toolbar>
 
   <mat-sidenav-container class="sidenav-container">
