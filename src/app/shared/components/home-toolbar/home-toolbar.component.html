@@ -6,7 +6,7 @@
 
     <span fxFlex></span>
 
-    <div fxLayout="row">
+    <div class="mr2" fxLayout="row">
       <mat-icon>brightness_5</mat-icon>
       <mat-slide-toggle (change)="toggleDarkTheme($event.checked)" [checked]="isDarkTheme | async">
       </mat-slide-toggle>
@@ -14,7 +14,7 @@
     </div>
 
 
-    <button mat-icon-button matTooltip="Notificaciones">
+    <button class="mr2" mat-icon-button matTooltip="Notificaciones">
       <mat-icon>notifications_none</mat-icon>
     </button>
 

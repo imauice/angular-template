@@ -10,6 +10,7 @@ import {_MatMenuDirectivesModule, MatMenuModule} from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
 import {RouterModule} from '@angular/router';
 import {AvatarModule} from 'ngx-avatar';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import {AvatarModule} from 'ngx-avatar';
     MatMenuModule,
     MatDividerModule,
     RouterModule,
-    AvatarModule
+    AvatarModule,
+    MatTooltipModule
   ]
 })
 export class HomeToolbarModule {
