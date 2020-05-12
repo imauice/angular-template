@@ -7,11 +7,24 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class SidenavMenuComponent implements OnInit {
   @Input() menus = [];
+  activeMenu = 1;
+  time = new Date();
+  date = new Date();
 
   constructor() {
   }
 
   ngOnInit(): void {
+    setInterval(() => {
+      this.time = new Date();
+    }, 1000);
   }
 
+  onMenuSelected(id: number) {
+    this.activeMenu = id;
+  }
+
+  public trackByFn(index: number, menu) {
+    return menu.id;
+  }
 }

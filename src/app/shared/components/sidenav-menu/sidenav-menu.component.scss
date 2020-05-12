@@ -1,0 +1,34 @@
+ul {
+  padding: 0;
+
+  li {
+    .nav__option {
+      text-align: center;
+      background-color: transparent;
+      margin: 10px 15px 0;
+      border-radius: 30px;
+      display: block;
+      text-decoration: none;
+      position: relative;
+      text-transform: uppercase;
+      cursor: pointer;
+      padding: 10px 8px;
+      transition: all .3s ease 0s;
+    }
+
+    &.active {
+      .nav__option {
+        color: #FFFFFF;
+        background-color: #03dac6;
+        box-shadow: 0 1px 15px 1px rgba(39, 39, 39, .1);
+      }
+    }
+
+    &:hover:not(.active) {
+      a {
+        background-color: hsla(265, 100%, 47%, 0.1);
+      }
+    }
+
+  }
+}
