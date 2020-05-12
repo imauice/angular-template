@@ -1,4 +1,4 @@
-<mat-toolbar [ngClass]="{'dark-theme': isDarkTheme | async}" color="primary">
+<mat-toolbar [color]="color" [ngClass]="{'dark-theme': isDarkTheme | async}">
   <mat-toolbar-row>
     <button (click)="onToggle()" mat-icon-button>
       <mat-icon>menu</mat-icon>
