@@ -1,8 +1,14 @@
-<mat-toolbar [ngClass]="{'dark-theme': isDarkTheme | async}" color="primary">
+<mat-toolbar [color]="color" [ngClass]="{'dark-theme': isDarkTheme | async}">
   <mat-toolbar-row>
     <button (click)="onToggle()" mat-icon-button>
       <mat-icon>menu</mat-icon>
     </button>
+
+
+    <a [routerLink]="['/home/dashboard']" fxLayout="row" fxLayoutAlign="center center">
+      <img alt="Logo" id="logo" src="assets/images/logo.png">
+      EE Template
+    </a>
 
     <span fxFlex></span>
 

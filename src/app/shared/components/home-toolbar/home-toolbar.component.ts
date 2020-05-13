@@ -14,12 +14,17 @@ export class HomeToolbarComponent implements OnInit {
   @Input() name: string;
   @Input() isMobile: boolean;
   isDarkTheme: Observable<boolean>;
+  color = 'primary';
 
   constructor(private themeService: ThemeService) {
   }
 
   ngOnInit() {
     this.isDarkTheme = this.themeService.isDarkTheme;
+
+    this.themeService.isDarkTheme.subscribe(value => {
+      this.color = value ? 'none' : 'primary';
+    });
   }
 
   toggleDarkTheme(checked: boolean) {

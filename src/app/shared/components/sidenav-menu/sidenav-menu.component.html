@@ -1,1 +1,13 @@
-<p>sidenav-menu works!</p>
+<nav>
+  <h5 class="tc mt3 mb0">{{ time | date: 'hh:mm:ss a' }}</h5>
+  <h6 class="tc">{{ date | date: 'mediumDate' }}</h6>
+
+  <mat-divider class="mr2 ml2"></mat-divider>
+
+  <ul class="list">
+    <li *ngFor="let menu of menus, trackBy: trackByFn"
+        [ngClass]="{'active': activeMenu == menu.id}">
+      <a (click)="onMenuSelected(menu.id)" class="nav__option">{{menu.name}}</a>
+    </li>
+  </ul>
+</nav>

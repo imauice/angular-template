@@ -14,7 +14,12 @@ export class HomeComponent implements OnInit {
   isMobile = false;
   githubId = 'danicaliforrnia';
   name = 'Daniel Stefanelli';
-  menus = [];
+  menus = [
+    {id: 1, name: 'Dashboard', icon: ''},
+    {id: 2, name: 'menu 2', icon: ''},
+    {id: 3, name: 'menu 3', icon: ''},
+    {id: 4, name: 'menu 4', ion: ''}
+  ];
   isDarkTheme: Observable<boolean>;
 
   constructor(private breakpointObserver: BreakpointObserver, private router: Router,
