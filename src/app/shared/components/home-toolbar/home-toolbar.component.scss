@@ -3,9 +3,14 @@
   z-index: 2;
 }
 
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
 #logo {
-  padding-top: 10px;
-  width: 100px;
+  height: 60px;
+  width: 70px;
 }
 
 .avatar-button {
