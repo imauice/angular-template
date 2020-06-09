@@ -8,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class SidenavMenuComponent implements OnInit {
   @Input() menus = [];
   activeMenu = 1;
+  activeSubmenu = -1;
   time = new Date();
   date = new Date();
 
@@ -22,6 +23,12 @@ export class SidenavMenuComponent implements OnInit {
 
   onMenuSelected(id: number) {
     this.activeMenu = id;
+  }
+
+  onSubmenuSelected(id: number) {
+    this.activeSubmenu = id;
+    console.log(this.activeMenu);
+    console.log(this.activeSubmenu);
   }
 
   public trackByFn(index: number, menu) {
