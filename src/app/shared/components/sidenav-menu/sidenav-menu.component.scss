@@ -2,7 +2,7 @@ ul {
   padding: 0;
 
   li {
-    .nav__option {
+    > .nav__option {
       text-align: center;
       background-color: transparent;
       margin: 10px 15px 0;
@@ -17,10 +17,14 @@ ul {
     }
 
     &.active {
-      .nav__option {
+      > .nav__option--active {
         color: #FFFFFF;
         background-color: #03dac6;
         box-shadow: 0 1px 15px 1px rgba(39, 39, 39, .1);
+      }
+
+      > .nav__option__submenus--active {
+        background-color: hsla(341, 86%, 11%, 0.1);
       }
     }
 
@@ -29,6 +33,5 @@ ul {
         background-color: hsla(265, 100%, 47%, 0.1);
       }
     }
-
   }
 }

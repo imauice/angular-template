@@ -16,9 +16,21 @@ export class HomeComponent implements OnInit {
   name = 'Daniel Stefanelli';
   menus = [
     {id: 1, name: 'Dashboard', icon: ''},
-    {id: 2, name: 'menu 2', icon: ''},
+    {
+      id: 2, name: 'menu 2', icon: '', submenus: [
+        {id: 1, name: 'submenu 1'},
+        {id: 2, name: 'submenu 2'},
+        {id: 3, name: 'submenu 3'}
+      ]
+    },
     {id: 3, name: 'menu 3', icon: ''},
-    {id: 4, name: 'menu 4', ion: ''}
+    {
+      id: 4, name: 'menu 4', ion: '', submenus: [
+        {id: 4, name: 'submenu 4'},
+        {id: 5, name: 'submenu 5'},
+        {id: 6, name: 'submenu 6'}
+      ]
+    }
   ];
   isDarkTheme: Observable<boolean>;
 
