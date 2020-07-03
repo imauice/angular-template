@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 import {Observable} from 'rxjs';
 import {ThemeService} from '../../../core/services/theme.service';
 
@@ -7,10 +7,11 @@ import {ThemeService} from '../../../core/services/theme.service';
   templateUrl: './home-toolbar.component.html',
   styleUrls: ['./home-toolbar.component.scss']
 })
-export class HomeToolbarComponent implements OnInit {
+export class HomeToolbarComponent implements OnInit, OnChanges {
   @Output() toggle = new EventEmitter<void>();
   @Output() signOut = new EventEmitter<void>();
   @Input() name: string;
+  firstName: string;
   @Input() isMobile: boolean;
   isDarkTheme: Observable<boolean>;
 
@@ -20,6 +21,13 @@ export class HomeToolbarComponent implements OnInit {
   ngOnInit() {
     this.isDarkTheme = this.themeService.isDarkTheme;
   }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (this.name) {
+      this.firstName = this.name.split(' ')[0];
+    }
+  }
+
 
   toggleDarkTheme(checked: boolean) {
     this.themeService.setDarkTheme(checked);
@@ -32,5 +40,4 @@ export class HomeToolbarComponent implements OnInit {
   onSignOut() {
     this.signOut.emit();
   }
-
 }
