@@ -1,22 +1,21 @@
-<mat-toolbar [color]="color" [ngClass]="{'dark-theme': isDarkTheme | async}">
+<mat-toolbar class="home-toolbar" color="{{(isDarkTheme | async) ? 'none' : 'primary'}}">
   <mat-toolbar-row>
+
     <button (click)="onToggle()" mat-icon-button>
       <mat-icon>menu</mat-icon>
     </button>
 
-
-    <a [routerLink]="['/home/dashboard']" fxLayout="row" fxLayoutAlign="center center">
-      <img alt="Logo" id="logo" src="assets/images/logo.png">
+    <a [routerLink]="['/home/dashboard']" class="home-toolbar__logo" fxLayout="row" fxLayoutAlign="center center">
       EE Template
     </a>
 
     <span fxFlex></span>
 
     <div class="mr2" fxLayout="row">
-      <mat-icon>brightness_5</mat-icon>
+      <mat-icon class="mr-8px">brightness_5</mat-icon>
       <mat-slide-toggle (change)="toggleDarkTheme($event.checked)" [checked]="isDarkTheme | async">
       </mat-slide-toggle>
-      <mat-icon>nights_stay</mat-icon>
+      <mat-icon class="ml-8px">nights_stay</mat-icon>
     </div>
 
 
@@ -24,20 +23,19 @@
       <mat-icon>notifications_none</mat-icon>
     </button>
 
-    <ngx-avatar [matMenuTriggerFor]="menu"
-                class="avatar-button"
-                githubId="{{githubId}}"></ngx-avatar>
+    <ngx-avatar [matMenuTriggerFor]="menu" [name]="name"
+                class="pointer"></ngx-avatar>
     <mat-menu #menu="matMenu">
-      <span class="tc bold menu_options--font-family" mat-menu-item>{{name}}</span>
+      <span class="home-toolbar__name" mat-menu-item>{{name}}</span>
       <mat-divider></mat-divider>
       <button [routerLink]="['profile']" mat-menu-item>
         <mat-icon>perm_identity</mat-icon>
-        <span class="menu_options--font-family"> Perfil </span>
+        <span> Perfil </span>
       </button>
       <mat-divider></mat-divider>
       <button (click)="onSignOut()" mat-menu-item>
         <mat-icon>power_settings_new</mat-icon>
-        <span class="menu_options--font-family"> Cerrar sesión </span>
+        <span> Cerrar sesión </span>
       </button>
     </mat-menu>
 

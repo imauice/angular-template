@@ -4,6 +4,10 @@ import {RouterModule, Routes} from '@angular/router';
 import {SharedModule} from '../../shared/shared.module';
 import {HomeComponent} from './home.component';
 import {FlexModule} from '@angular/flex-layout';
+import {HomeToolbarComponent} from './home-toolbar/home-toolbar.component';
+import {HomeFooterComponent} from './home-footer/home-footer.component';
+import {AvatarModule} from 'ngx-avatar';
+import {HomeSidebarModule} from './home-sidebar/home-sidebar.module';
 
 const routes: Routes = [
   {
@@ -14,12 +18,14 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, HomeToolbarComponent, HomeFooterComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
     SharedModule,
-    FlexModule
+    FlexModule,
+    AvatarModule,
+    HomeSidebarModule
   ]
 })
 export class HomeModule {
