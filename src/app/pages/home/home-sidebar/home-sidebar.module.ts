@@ -5,6 +5,7 @@ import {HomeSidebarHeaderComponent} from './home-sidebar-header/home-sidebar-hea
 import {HomeSidebarOptionsComponent} from './home-sidebar-options/home-sidebar-options.component';
 import {MatDividerModule} from "@angular/material/divider";
 import {FlexModule} from "@angular/flex-layout";
+import {MatIconModule} from "@angular/material/icon";
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import {FlexModule} from "@angular/flex-layout";
   imports: [
     CommonModule,
     MatDividerModule,
-    FlexModule
+    FlexModule,
+    MatIconModule
   ]
 })
 export class HomeSidebarModule {

@@ -7,14 +7,20 @@
     <a (click)="menuClick(menu.id, menu.route)"
        [ngClass]="{'is-active': activeMenu == menu.id,
         'is-selected': activeMenu == menu.id && menu.submenus && openSubmenu}"
-       class="home-sidebar-options__nav-option">{{menu.name}}</a>
+       class="home-sidebar-options__nav-option">
+      <mat-icon *ngIf="menu.icon">{{menu.icon}}</mat-icon>
+      {{menu.name}}
+    </a>
 
     <div [class.is-open]="activeMenu == menu.id && openSubmenu" class="home-sidebar-options__submenus">
       <ul>
         <li *ngFor="let submenu of menu.submenus" [ngClass]="{'is-active': activeSubmenu == submenu.id}"
             class="home-sidebar-options__menu">
           <a (click)="submenuClick(submenu.id, submenu.route)" [class.is-active]="activeSubmenu == submenu.id"
-             class="home-sidebar-options__nav-option">{{submenu.name}}</a>
+             class="home-sidebar-options__nav-option">
+            <mat-icon *ngIf="submenu.icon">{{submenu.icon}}</mat-icon>
+            {{submenu.name}}
+          </a>
         </li>
       </ul>
     </div>
