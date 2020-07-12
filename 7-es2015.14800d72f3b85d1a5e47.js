@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{hAKZ:function(n,o,t){"use strict";t.r(o),t.d(o,"SignModule",(function(){return u}));var r=t("ofXK"),c=t("tyNb"),e=t("PCNd"),i=t("fXoL");const s=[];let u=(()=>{class n{}return n.\u0275mod=i.Mb({type:n}),n.\u0275inj=i.Lb({factory:function(o){return new(o||n)},imports:[[r.c,c.d.forChild(s),e.a]]}),n})()}}]);
