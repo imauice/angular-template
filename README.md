@@ -26,7 +26,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Enterprise Edition Template with a modern dashboard and other features.
+Enterprise Edition Template with a modern dashboard dark mode option.
 
 ### Built With
 This template was built with:
