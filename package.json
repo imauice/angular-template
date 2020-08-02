@@ -1,12 +1,12 @@
 {
-  "name": "ee-template",
+  "name": "angular-template",
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --o --host 0.0.0.0",
     "build": "ng build",
-    "deploy:subdomain": "ng deploy --cname=ee-template.danielstefanelli.com",
-    "deploy:github-domain": "ng deploy --base-href=/EE-template/",
+    "deploy:subdomain": "ng deploy --cname=angular-template.danielstefanelli.com",
+    "deploy:github-domain": "ng deploy --base-href=/angular-template/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
