@@ -3,7 +3,7 @@
     alt="Logo" height="100">
 </a>
 
-# EETemplate
+# Angular Template
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
@@ -26,12 +26,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Enterprise Edition Template with a modern dashboard dark mode option.
+Angular Enterprise Edition Template with a modern dashboard and dark mode option.
 
 ### Built With
 This template was built with:
 
-* [Angular 9](https://material.angular.io/)
+* [Angular 10](https://material.angular.io/)
 * [Angular Material](https://material.angular.io/)
 
 <!-- GETTING STARTED -->
@@ -54,7 +54,7 @@ npm install -g @angular/cli
 
 1. Clone the repo
 ```sh
-git clone https://github.com/danicaliforrnia/EE-template.git
+git clone https://github.com/danicaliforrnia/angular-template.git
 ```
 3. Install NPM packages
 ```sh
@@ -74,7 +74,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-This template has a dashboard as default landing page. This dashboard display modern charts with 
+This template has a dashboard as default landing page. This dashboard displays modern charts with 
 analytics data.
 
 <!--Images here-->
@@ -103,4 +103,4 @@ Distributed under the MIT License.
 Daniel Stefanelli - 
 [@danicalifoornia](https://twitter.com/danicalifoornia) - 
 [daniel-stefanelli Linkedin](https://www.linkedin.com/in/daniel-stefanelli/)
-hernandezpdaniele@gmail.com
+daniel.stefanelli.h@gmail.com

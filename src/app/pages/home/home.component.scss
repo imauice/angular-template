@@ -1,4 +1,4 @@
-@import "src/app/core/styles/variables";
+@import "../../core/styles/dark_theme";
 
 .home {
   width: 100vw;
@@ -12,16 +12,19 @@
 
   &__sidebar {
     width: 291px;
-    background-color: $side-menu-background-color;
+    background-color: #fafafa;
     box-shadow: none !important;
     border: 0 !important;
   }
 
   &__content {
-    background-color: $content-background-color;
-    overflow: auto;
-    padding: 16px;
+    overflow: hidden;
     position: relative;
+
+    main {
+      padding: 16px 16px 8px 16px;
+      min-height: calc(100vh - 66px - 40px);
+    }
   }
 
   &.is-mobile {

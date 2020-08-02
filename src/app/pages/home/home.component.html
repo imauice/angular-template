@@ -7,17 +7,21 @@
   <mat-sidenav-container class="home__sidenav-container mat-app-background">
 
     <mat-sidenav #sidebar [fixedInViewport]="isMobile" [mode]="isMobile ? 'over' : 'side'"
-                 class="home__sidebar" fixedTopGap="64" opened>
+                 class="home__sidebar" fixedTopGap="66" opened>
       <app-home-sidebar [menus]="menus"></app-home-sidebar>
     </mat-sidenav>
 
     <mat-sidenav-content class="home__content mat-app-background" fxLayout="column">
 
-      <main fxFlex>
+      <ngx-simplebar [options]="options" fxFlex="calc(100% - 66px)">
 
-      </main>
+        <main fxLayout="column">
+          <router-outlet></router-outlet>
+        </main>
 
-      <app-home-footer></app-home-footer>
+        <app-home-footer></app-home-footer>
+      </ngx-simplebar>
+
     </mat-sidenav-content>
 
   </mat-sidenav-container>

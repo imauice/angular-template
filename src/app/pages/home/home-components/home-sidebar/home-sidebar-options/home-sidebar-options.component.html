@@ -4,7 +4,7 @@
   <li *ngFor="let menu of menus" [ngClass]="{'is-active': activeMenu == menu.id,
       'is-active-bg': activeMenu == menu.id && menu.submenus && openSubmenu}"
       class="home-sidebar-options__menu">
-    <a (click)="menuClick(menu.id, menu.route)"
+    <a (click)="menuClick(menu, menu.route)"
        [ngClass]="{'is-active': activeMenu == menu.id,
         'is-selected': activeMenu == menu.id && menu.submenus && openSubmenu}"
        class="home-sidebar-options__nav-option">

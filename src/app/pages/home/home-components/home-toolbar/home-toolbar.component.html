@@ -1,17 +1,15 @@
 <mat-toolbar class="home-toolbar" color="{{(isDarkTheme | async) ? 'none' : 'primary'}}">
-  <mat-toolbar-row>
+  <mat-toolbar-row class="home-toolbar__row">
 
     <button (click)="onToggle()" mat-icon-button>
       <mat-icon>menu</mat-icon>
     </button>
 
-    <a [routerLink]="['/home/dashboard']" class="home-toolbar__logo" fxLayout="row" fxLayoutAlign="center center">
-      EE Template
+    <a [routerLink]="['/home/dashboard']" class="home-toolbar__logo" fxFlex fxLayout="row">
+      Angular Template
     </a>
 
-    <span fxFlex></span>
-
-    <div class="mr2" fxLayout="row">
+    <div class="mr-8px" fxLayout="row">
       <mat-icon class="mr-8px">brightness_5</mat-icon>
       <mat-slide-toggle (change)="toggleDarkTheme($event.checked)" [checked]="isDarkTheme | async">
       </mat-slide-toggle>
@@ -19,7 +17,7 @@
     </div>
 
 
-    <button class="mr2" mat-icon-button matTooltip="Notificaciones">
+    <button class="mr-8px" mat-icon-button matTooltip="Notificaciones">
       <mat-icon>notifications_none</mat-icon>
     </button>
 
