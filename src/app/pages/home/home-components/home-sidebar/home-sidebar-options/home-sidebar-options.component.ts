@@ -1,8 +1,8 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Menu} from '../../../../core/menus';
+import {Menu} from '../../../../../core/menus';
 import {Router} from '@angular/router';
 import {Observable} from "rxjs";
-import {ThemeService} from "../../../../core/services/theme.service";
+import {ThemeService} from "../../../../../core/services/theme.service";
 
 @Component({
   selector: 'app-home-sidebar-options',
