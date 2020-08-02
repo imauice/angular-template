@@ -1,6 +1,6 @@
 import {Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges} from '@angular/core';
 import {Observable} from 'rxjs';
-import {ThemeService} from '../../../core/services/theme.service';
+import {ThemeService} from '../../../../core/services/theme.service';
 
 @Component({
   selector: 'app-home-toolbar',

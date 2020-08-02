@@ -1,12 +1,4 @@
-@import './theme';
-
-$light-primary: mat-color(map-get($light-theme, primary));
-$light-accent: mat-color(map-get($light-theme, accent));
-$light-warn: mat-color(map-get($light-theme, warn));
-
-$dark-primary: mat-color(map-get($dark-theme, primary));
-$dark-accent: mat-color(map-get($dark-theme, accent));
-$dark-warn: mat-color(map-get($dark-theme, warn));
+@import 'light_theme';
 
 $content-background-color: #f4f4f4;
 $side-menu-background-color: #fafafa;
