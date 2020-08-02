@@ -8,14 +8,6 @@ export const menus: Menu[] = [
       {id: 1, name: 'Subopción 1', icon: 'analytics', route: ''},
       {id: 2, name: 'Subopción 2', icon: 'build', route: ''},
       {id: 3, name: 'Subopción 3', icon: 'description', route: ''},
-      {id: 4, name: 'Subopción 4', icon: 'language', route: ''},
-      {id: 1, name: 'Subopción 1', icon: 'analytics', route: ''},
-      {id: 2, name: 'Subopción 2', icon: 'build', route: ''},
-      {id: 3, name: 'Subopción 3', icon: 'description', route: ''},
-      {id: 4, name: 'Subopción 4', icon: 'language', route: ''},
-      {id: 1, name: 'Subopción 1', icon: 'analytics', route: ''},
-      {id: 2, name: 'Subopción 2', icon: 'build', route: ''},
-      {id: 3, name: 'Subopción 3', icon: 'description', route: ''},
       {id: 4, name: 'Subopción 4', icon: 'language', route: ''}
     ]
   },

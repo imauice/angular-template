@@ -23,17 +23,18 @@ export class HomeSidebarOptionsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  menuClick(index: number, route?: string) {
-    this.openSubmenu = this.activeMenu === index ? !this.openSubmenu : true;
-    this.activeSubmenu = this.activeMenu === index ? this.activeSubmenu : 0;
-    this.activeMenu = index;
+  menuClick(menu: Menu, route?: string) {
+    this.openSubmenu = menu.submenus && this.activeMenu === menu.id ? !this.openSubmenu : true;
+    this.activeMenu = menu.id;
+
     if (route) {
       this.router.navigate([route]);
     }
   }
 
-  submenuClick(index: number, route: string) {
-    this.activeSubmenu = index;
+  submenuClick(id: number, route: string) {
+    this.activeSubmenu = id;
+
     this.router.navigate([route]);
   }
 }
