@@ -3,9 +3,10 @@ import {CommonModule} from '@angular/common';
 import {HomeSidebarComponent} from './home-sidebar.component';
 import {HomeSidebarHeaderComponent} from './home-sidebar-header/home-sidebar-header.component';
 import {HomeSidebarOptionsComponent} from './home-sidebar-options/home-sidebar-options.component';
-import {MatDividerModule} from "@angular/material/divider";
-import {FlexModule} from "@angular/flex-layout";
-import {MatIconModule} from "@angular/material/icon";
+import {MatDividerModule} from '@angular/material/divider';
+import {FlexModule} from '@angular/flex-layout';
+import {MatIconModule} from '@angular/material/icon';
+import {SimplebarAngularModule} from 'simplebar-angular';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import {MatIconModule} from "@angular/material/icon";
     CommonModule,
     MatDividerModule,
     FlexModule,
-    MatIconModule
+    MatIconModule,
+    SimplebarAngularModule
   ]
 })
 export class HomeSidebarModule {

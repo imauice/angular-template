@@ -18,9 +18,13 @@
   }
 
   &__content {
-    overflow: auto;
-    padding: 16px;
+    overflow: hidden;
     position: relative;
+
+    main {
+      padding: 16px 16px 8px 16px;
+      min-height: calc(100vh - 66px - 40px);
+    }
   }
 
   &.is-mobile {

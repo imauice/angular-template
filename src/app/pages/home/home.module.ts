@@ -8,6 +8,7 @@ import {HomeToolbarComponent} from './home-components/home-toolbar/home-toolbar.
 import {HomeFooterComponent} from './home-components/home-footer/home-footer.component';
 import {AvatarModule} from 'ngx-avatar';
 import {HomeSidebarModule} from './home-components/home-sidebar/home-sidebar.module';
+import {SimplebarAngularModule} from "simplebar-angular";
 
 const routes: Routes = [
   {
@@ -25,7 +26,8 @@ const routes: Routes = [
     SharedModule,
     AvatarModule,
     HomeSidebarModule,
-    FlexModule
+    FlexModule,
+    SimplebarAngularModule
   ]
 })
 export class HomeModule {
