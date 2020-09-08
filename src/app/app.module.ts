@@ -11,6 +11,8 @@ import localeES from '@angular/common/locales/es';
 import {registerLocaleData} from '@angular/common';
 import {FlexLayoutModule} from '@angular/flex-layout';
 import {TemplateToastModule} from './shared/components/template-toast/template-toast.module';
+import {TemplateConfirmationModalModule} from './shared/components/template-confirmation-modal/template-confirmation-modal.module';
+import {TemplateModalModule} from './shared/components/template-modal/template-modal.module';
 
 registerLocaleData(localeES, 'es');
 
@@ -27,7 +29,9 @@ registerLocaleData(localeES, 'es');
     MatToolbarModule,
     MatSlideToggleModule,
     MatIconModule,
-    TemplateToastModule
+    TemplateToastModule,
+    TemplateConfirmationModalModule,
+    TemplateModalModule
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'es'}
