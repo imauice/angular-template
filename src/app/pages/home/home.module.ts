@@ -1,6 +1,5 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {RouterModule, Routes} from '@angular/router';
 import {SharedModule} from '../../shared/shared.module';
 import {HomeComponent} from './home.component';
 import {FlexModule} from '@angular/flex-layout';
@@ -13,14 +12,7 @@ import {HomeSidebarComponent} from './home-sidebar/home-sidebar.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {HomeSidebarHeaderComponent} from './home-sidebar/home-sidebar-header/home-sidebar-header.component';
-
-const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent,
-    children: []
-  }
-];
+import {HomeRoutingModule} from './home-routing.module';
 
 @NgModule({
   declarations: [
@@ -31,7 +23,7 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes),
+    HomeRoutingModule,
     SharedModule,
     AvatarModule,
     FlexModule,
