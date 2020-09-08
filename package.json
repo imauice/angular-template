@@ -1,9 +1,22 @@
 {
   "name": "angular-template",
   "version": "1.0.0",
+  "author": {
+    "name": "Daniel Stefanelli",
+    "email": "daniel.stefanelli.h@gmail.com",
+    "url": "https://danielstefanelli.com"
+  },
+  "description": "Angular dashboard tempalte",
+  "repository": "https://github.com/danicaliforrnia/angular-template",
+  "keywords": [
+    "angular",
+    "dashboard",
+    "material",
+    "template"
+  ],
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --o --host 0.0.0.0",
+    "start": "ng serve --o --host 0.0.0.0 --port 4100",
     "build": "ng build",
     "deploy:subdomain": "ng deploy --cname=angular-template.danielstefanelli.com",
     "deploy:github-domain": "ng deploy --base-href=/angular-template/",
