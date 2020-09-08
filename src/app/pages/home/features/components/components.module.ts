@@ -13,6 +13,10 @@ const routes: Routes = [
       {
         path: 'buttons',
         loadChildren: () => import('./buttons/buttons.module.js').then(m => m.ButtonsModule)
+      },
+      {
+        path: 'sliders',
+        loadChildren: () => import('./sliders/sliders.module.js').then(m => m.SlidersModule)
       }
     ]
   }
