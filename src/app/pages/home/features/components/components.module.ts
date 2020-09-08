@@ -21,6 +21,10 @@ const routes: Routes = [
       {
         path: 'switches-&-tabs',
         loadChildren: () => import('./switches-&-tabs/switches-&-tabs.module.js').then(m => m.SwitchesTabsModule)
+      },
+      {
+        path: 'notifications',
+        loadChildren: () => import('./notifications/notifications.module.js').then(m => m.NotificationsModule)
       }
     ]
   }

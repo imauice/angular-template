@@ -50,15 +50,16 @@ export const menus: Menu[] = [
     id: 2, name: 'Componentes',
     submenus: [
       {id: 1, name: 'Botones', icon: 'add_circle', route: '/home/components/buttons'},
-      {id: 3, name: 'Sliders', icon: 'linear_scale', route: '/home/components/sliders'},
-      {id: 4, name: 'Switches y tabs', icon: 'toggle_on', route: '/home/components/switches-&-tabs'}
+      {id: 2, name: 'Sliders', icon: 'linear_scale', route: '/home/components/sliders'},
+      {id: 3, name: 'Switches y tabs', icon: 'toggle_on', route: '/home/components/switches-&-tabs'},
+      {id: 4, name: 'Notifications', icon: 'notifications', route: '/home/components/notifications'},
     ]
   },
   {
-    id: 5, name: 'Formularios', icon: 'edit'
+    id: 3, name: 'Formularios', icon: 'edit'
   },
   {
-    id: 6, name: 'Charts', icon: 'analytics'
+    id: 4, name: 'Charts', icon: 'analytics'
   }
 ];
 

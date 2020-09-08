@@ -10,6 +10,7 @@ import {MatIconModule} from '@angular/material/icon';
 import localeES from '@angular/common/locales/es';
 import {registerLocaleData} from '@angular/common';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import {TemplateToastModule} from './shared/components/template-toast/template-toast.module';
 
 registerLocaleData(localeES, 'es');
 
@@ -25,7 +26,8 @@ registerLocaleData(localeES, 'es');
     FlexLayoutModule,
     MatToolbarModule,
     MatSlideToggleModule,
-    MatIconModule
+    MatIconModule,
+    TemplateToastModule
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'es'}
