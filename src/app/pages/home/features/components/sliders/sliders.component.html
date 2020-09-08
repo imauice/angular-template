@@ -38,26 +38,32 @@
 
   <div fxLayout="row wrap" fxLayoutAlign="space-between">
 
-    <template-slider
-      color="primary"
-      fxFlex="30%"
-      max="100"
-      min="1"
-      step="10"></template-slider>
+    <div fxFlex="30%" fxLayout="column" fxLayoutGap="1rem">
+      <h3>Primary color </h3>movements-&-account-statement
+      <template-slider
+        color="primary"
+        max="100"
+        min="1"
+        step="10"></template-slider>
+    </div>
 
-    <template-slider
-      fxFlex="30%"
-      max="100"
-      min="1"
-      step="10"
-      value="100"></template-slider>
+    <div fxFlex="30%" fxLayout="column" fxLayoutGap="1rem">
+      <h3>Accent color and full value</h3>
+      <template-slider
+        max="100"
+        min="1"
+        step="10"
+        value="100"></template-slider>
+    </div>
 
-    <template-slider
-      disabled="true"
-      fxFlex="30%"
-      max="100"
-      min="1"
-      step="10"></template-slider>
+    <div fxFlex="30%" fxLayout="column" fxLayoutGap="1rem">
+      <h3>Disabled </h3>
+      <template-slider
+        disabled="true"
+        max="100"
+        min="1"
+        step="10"></template-slider>
+    </div>
 
   </div>
 </div>

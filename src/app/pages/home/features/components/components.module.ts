@@ -17,6 +17,10 @@ const routes: Routes = [
       {
         path: 'sliders',
         loadChildren: () => import('./sliders/sliders.module.js').then(m => m.SlidersModule)
+      },
+      {
+        path: 'switches-&-tabs',
+        loadChildren: () => import('./switches-&-tabs/switches-&-tabs.module.js').then(m => m.SwitchesTabsModule)
       }
     ]
   }
