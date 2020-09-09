@@ -47,7 +47,7 @@ export const menus: Menu[] = [
     id: 1, name: 'Inicio', icon: 'home', route: '/'
   },
   {
-    id: 2, name: 'Componentes',
+    id: 2, name: 'Componentes', icon: 'games',
     submenus: [
       {id: 1, name: 'Botones', icon: 'add_circle', route: '/home/components/buttons'},
       {id: 2, name: 'Sliders', icon: 'linear_scale', route: '/home/components/sliders'},
@@ -61,7 +61,7 @@ export const menus: Menu[] = [
     id: 3, name: 'Formularios', icon: 'edit'
   },
   {
-    id: 4, name: 'Charts',
+    id: 4, name: 'Charts', icon: 'addchart',
     submenus: [
       {id: 7, name: 'Charts.js', icon: 'insert_chart_outlined', route: '/home/charts/chartsjs'},
       {id: 8, name: 'ngx-charts', icon: 'insert_chart', route: '/home/charts/ngx-charts'},
