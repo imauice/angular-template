@@ -61,7 +61,11 @@ export const menus: Menu[] = [
     id: 3, name: 'Formularios', icon: 'edit'
   },
   {
-    id: 4, name: 'Charts', icon: 'analytics'
+    id: 4, name: 'Charts',
+    submenus: [
+      {id: 7, name: 'Charts.js', icon: 'insert_chart_outlined', route: '/home/charts/chartsjs'},
+      {id: 8, name: 'ngx-charts', icon: 'insert_chart', route: '/home/charts/ngx-charts'},
+    ]
   }
 ];
 
