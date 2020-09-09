@@ -10,6 +10,10 @@ const routes: Routes = [
       {
         path: 'components',
         loadChildren: () => import('./features/components/components.module.js').then(m => m.ComponentsModule)
+      },
+      {
+        path: 'charts',
+        loadChildren: () => import('./features/charts/charts.module.js').then(m => m.ChartsModule)
       }
     ]
   }
