@@ -4,13 +4,20 @@
 
   <h3>Click to view notifications</h3>
 
-  <div fxFlexAlign="center" fxLayout="row wrap" fxLayoutGap="2rem">
-    <button (click)="onClick('success')" color="primary" mat-flat-button>Success</button>
-    <button (click)="onClick('warning')" color="primary" mat-flat-button>Warning</button>
-    <button (click)="onClick('error')" color="primary" mat-flat-button>Error</button>
-    <button (click)="onClick('info')" color="primary" mat-flat-button>Info</button>
-
+  <div class="w-100" fxFlexAlign="center" fxLayout="row wrap"
+       fxLayout.lt-sm="column" fxLayoutGap.gt-xs="2rem grid" fxLayoutGap.lt-sm="1rem">
+    <div>
+      <button (click)="onClick('success')" class="w-100" color="primary" mat-flat-button>Success</button>
+    </div>
+    <div>
+      <button (click)="onClick('warning')" class="w-100" color="primary" mat-flat-button>Warning</button>
+    </div>
+    <div>
+      <button (click)="onClick('error')" class="w-100" color="primary" mat-flat-button>Error</button>
+    </div>
+    <div>
+      <button (click)="onClick('info')" class="w-100" color="primary" mat-flat-button>Info</button>
+    </div>
   </div>
-
 
 </div>

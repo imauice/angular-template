@@ -54,6 +54,7 @@ export const menus: Menu[] = [
       {id: 3, name: 'Switches y tabs', icon: 'toggle_on', route: '/home/components/switches-&-tabs'},
       {id: 4, name: 'Modals', icon: 'call_to_action', route: '/home/components/modals'},
       {id: 5, name: 'Notifications', icon: 'notifications', route: '/home/components/notifications'},
+      {id: 6, name: 'Tables', icon: 'tables', route: '/home/components/tables'},
     ]
   },
   {

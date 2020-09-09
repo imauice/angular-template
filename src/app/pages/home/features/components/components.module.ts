@@ -23,12 +23,16 @@ const routes: Routes = [
         loadChildren: () => import('./switches-&-tabs/switches-&-tabs.module.js').then(m => m.SwitchesTabsModule)
       },
       {
+        path: 'modals',
+        loadChildren: () => import('./modals/modals.module.js').then(m => m.ModalsModule)
+      },
+      {
         path: 'notifications',
         loadChildren: () => import('./notifications/notifications.module.js').then(m => m.NotificationsModule)
       },
       {
-        path: 'modals',
-        loadChildren: () => import('./modals/modals.module.js').then(m => m.ModalsModule)
+        path: 'tables',
+        loadChildren: () => import('./tables/tables.module.js').then(m => m.TablesModule)
       }
     ]
   }

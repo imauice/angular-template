@@ -4,7 +4,8 @@
 
   <h2>Angular Material switches</h2>
 
-  <div fxLayout="row wrap" fxLayoutAlign="space-between">
+  <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="space-between">
+
     <div fxFlex="30%" fxLayout="row" fxLayoutGap="1rem">
       <h3>Primary color: </h3>
       <mat-slide-toggle color="primary">Switch</mat-slide-toggle>
@@ -24,7 +25,8 @@
 
   <h2>Template switches</h2>
 
-  <div fxLayout="row wrap" fxLayoutAlign="space-between">
+  <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="space-between" fxLayoutGap.lt-sm="1rem">
+
     <div fxFlex="30%" fxLayout="column" fxLayoutGap="1rem">
       <h3>Off: </h3>
       <template-switch [off]="off" [on]="on"></template-switch>

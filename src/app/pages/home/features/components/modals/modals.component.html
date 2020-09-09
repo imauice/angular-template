@@ -4,7 +4,7 @@
 
   <h3>Click to open modal</h3>
 
-  <div fxLayout="row" fxLayoutGap="2rem">
+  <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="2rem">
     <button (click)="openModal()" color="primary" mat-flat-button>Open modal</button>
 
     <button (click)="openConfirmModal()" color="primary" mat-flat-button>Open confirmation modal</button>
