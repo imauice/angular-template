@@ -12,9 +12,16 @@ export class TemplateHeaderRowDirective {
               private themeService: ThemeService) {
     this.renderer.setStyle(this.el.nativeElement, 'border', 'none');
     this.renderer.setStyle(this.el.nativeElement, 'background-color', '#F4F4F4');
-    this.themeService.isDarkTheme.subscribe(darkTheme => {
-      this.renderer.setStyle(this.el.nativeElement, 'background-color', '#212121');
-    });
+    this.checkThemeChanges();
   }
 
+  checkThemeChanges() {
+    this.themeService.isDarkTheme.subscribe(darkTheme => {
+      if (darkTheme) {
+        this.renderer.setStyle(this.el.nativeElement, 'background-color', '#212121');
+      } else {
+        this.renderer.setStyle(this.el.nativeElement, 'background-color', '#F4F4F4');
+      }
+    });
+  }
 }
