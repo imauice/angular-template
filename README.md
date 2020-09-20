@@ -1,8 +1,3 @@
-<a href="https://danicaliforrnia.github.io/portfolio/">
-    <img src="https://danicaliforrnia.github.io/portfolio/assets/images/logo.png"
-    alt="Logo" height="100">
-</a>
-
 # Angular Template
 
 <!-- TABLE OF CONTENTS -->
@@ -33,6 +28,7 @@ This template was built with:
 
 * [Angular 10](https://material.angular.io/)
 * [Angular Material](https://material.angular.io/)
+* [chart.js](https://www.chartjs.org/)
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -100,7 +96,6 @@ Distributed under the MIT License.
 <!-- CONTACT -->
 ## Contact
 
-Daniel Stefanelli - 
-[@danicalifoornia](https://twitter.com/danicalifoornia) - 
+Daniel Stefanelli -
+[My portfolio](https://www.daniel.stefanelli.h@gmail.com) - 
 [daniel-stefanelli Linkedin](https://www.linkedin.com/in/daniel-stefanelli/)
-daniel.stefanelli.h@gmail.com
