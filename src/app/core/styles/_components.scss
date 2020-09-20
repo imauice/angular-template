@@ -26,3 +26,11 @@ pagination-controls {
     outline: none !important;
   }
 }
+
+.simplebar-track.simplebar-horizontal {
+  display: none;
+}
+
+.simplebar-content {
+  overflow-x: hidden;
+}
