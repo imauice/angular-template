@@ -13,7 +13,7 @@
 
     <mat-sidenav-content class="home__content" fxLayout="column">
 
-      <ngx-simplebar [options]="options" fxFlex="calc(100% - 66px)">
+      <ngx-simplebar [options]="{autoHide: false, scrollbarMinSize: 100}" fxFlex="calc(100% - 66px)">
 
         <main fxLayout="column">
           <router-outlet></router-outlet>

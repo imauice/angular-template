@@ -15,7 +15,6 @@ export class HomeComponent implements OnInit {
   name = 'Daniel Stefanelli';
   menus = menus;
   isDarkTheme: Observable<boolean>;
-  options = {autoHide: false, scrollbarMinSize: 100};
 
   constructor(private breakpointObserver: BreakpointObserver, private router: Router,
               private themeService: ThemeService) {

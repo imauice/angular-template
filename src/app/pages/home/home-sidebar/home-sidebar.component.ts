@@ -7,7 +7,6 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class HomeSidebarComponent implements OnInit {
   @Input() menus = [];
-  options = {autoHide: false, scrollbarMinSize: 100};
 
   constructor() {
   }
