@@ -9,13 +9,14 @@ import {Color, Label} from 'ng2-charts';
 })
 export class DashboardComponent implements OnInit {
   lineChartData: ChartDataSets[] = [
-    {data: [300, 200, 250, 400, 500, 325, 410, 425, 500, 250, 380, 410], label: 'Ganancias mensuales'},
+    {data: [1000, 2000, 1150, 1520, 1800, 1100, 2000, 1910, 1900, 1500, 1300, 120], label: 'Monthly profits'},
   ];
-  lineChartLabels: Label[] = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Div'];
+  lineChartLabels: Label[] = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AGO', 'SEP', 'OCT', 'NOV', 'DEC'];
   lineChartColors: Color[] = [
     {borderColor: 'black', backgroundColor: 'rgba(255,255,0,0.28)'}];
   chartOptions: ChartOptions = {
     responsive: true,
+    maintainAspectRatio: false,
     scales: {
       yAxes: [{
         ticks: {
