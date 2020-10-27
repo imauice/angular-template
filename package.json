@@ -6,8 +6,11 @@
     "email": "daniel.stefanelli.h@gmail.com",
     "url": "https://danielstefanelli.com"
   },
-  "description": "Angular dashboard tempalte",
-  "repository": "https://github.com/danicaliforrnia/angular-template",
+  "description": "Angular dashboard template",
+  "repository": {
+    "type": "Git",
+    "url": "https://github.com/danicaliforrnia/angular-template"
+  },
   "keywords": [
     "angular",
     "dashboard",
