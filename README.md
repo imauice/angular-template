@@ -24,6 +24,7 @@
 Angular Enterprise Edition Template with a modern dashboard and dark mode option.
 
 ### Built With
+
 This template was built with:
 
 * [Angular 10](https://material.angular.io/)
