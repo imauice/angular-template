@@ -1,0 +1,12 @@
+:host {
+  width: 100%;
+}
+
+.template-content-tooltip {
+  box-sizing: border-box;
+  border-radius: 8px 8px 0 0;
+  -webkit-box-shadow: 0px -3px 8px rgba(0, 0, 0, 0.149);
+  -moz-box-shadow: 0px -3px 8px rgba(0, 0, 0, 0.149);
+  box-shadow: 0px -3px 8px rgba(0, 0, 0, 0.149);
+  background: #a29e9e;
+}
