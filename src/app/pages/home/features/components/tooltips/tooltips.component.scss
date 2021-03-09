@@ -1,0 +1,17 @@
+.tooltips {
+
+  ::ng-deep {
+
+    .mat-input-element, .mat-form-field-label-wrapper {
+      margin-left: 0.5rem;
+    }
+
+  }
+
+  &__box {
+    width: 200px;
+    height: 200px;
+    background-color: #d67d8d;
+  }
+
+}

@@ -23,6 +23,10 @@ const routes: Routes = [
         loadChildren: () => import('./switches-&-tabs/switches-&-tabs.module.js').then(m => m.SwitchesTabsModule)
       },
       {
+        path: 'tooltips',
+        loadChildren: () => import('./tooltips/tooltips.module.js').then(m => m.TooltipsModule)
+      },
+      {
         path: 'modals',
         loadChildren: () => import('./modals/modals.module.js').then(m => m.ModalsModule)
       },

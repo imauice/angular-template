@@ -1,0 +1,25 @@
+<div class="tooltips" fxLayout="column" fxLayoutGap="1rem">
+  <h1>Tooltips</h1>
+
+  <h2>Form tooltip</h2>
+
+  <mat-form-field [templatePasswordFieldTooltip]="control"
+                  appearance="standard"
+                  style="width: 300px">
+    <mat-label>Password</mat-label>
+    <input [formControl]="control"
+           matInput
+           type="password"/>
+    <mat-icon (click)="hidePassword = !hidePassword" [svgIcon]="hidePassword ? 'visibility' : 'visibility_off'"
+              matSuffix></mat-icon>
+  </mat-form-field>
+
+
+  <h1>Form tooltip</h1>
+
+  <div [templateContentTooltip]="'You can pass an object here'" class="tooltips__box" fxLayout="row"
+       fxLayoutAlign="center center">
+    Hi, I'm a box
+  </div>
+
+</div>

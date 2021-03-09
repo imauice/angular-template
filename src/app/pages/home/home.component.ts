@@ -51,9 +51,10 @@ export const menus: Menu[] = [
       {id: 1, name: 'buttons', icon: 'add_circle', route: '/home/components/buttons'},
       {id: 2, name: 'Sliders', icon: 'linear_scale', route: '/home/components/sliders'},
       {id: 3, name: 'Switches & tabs', icon: 'toggle_on', route: '/home/components/switches-&-tabs'},
-      {id: 4, name: 'Modals', icon: 'call_to_action', route: '/home/components/modals'},
-      {id: 5, name: 'Notifications', icon: 'notifications', route: '/home/components/notifications'},
-      {id: 6, name: 'Tables', icon: 'tables', route: '/home/components/tables'},
+      {id: 4, name: 'Tooltips', icon: 'feedback', route: '/home/components/tooltips'},
+      {id: 5, name: 'Modals', icon: 'call_to_action', route: '/home/components/modals'},
+      {id: 6, name: 'Notifications', icon: 'notifications', route: '/home/components/notifications'},
+      {id: 7, name: 'Tables', icon: 'tables', route: '/home/components/tables'},
     ]
   },
   {
