@@ -15,4 +15,5 @@ export class ToastRef {
   getPosition() {
     return this.overlay.overlayElement.getBoundingClientRect();
   }
+
 }

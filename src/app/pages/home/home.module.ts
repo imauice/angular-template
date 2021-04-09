@@ -17,7 +17,9 @@ import {HomeRoutingModule} from './home-routing.module';
 @NgModule({
   declarations: [
     HomeComponent,
-    HomeSidebarComponent, HomeSidebarHeaderComponent, HomeSidebarOptionsComponent,
+    HomeSidebarComponent,
+    HomeSidebarHeaderComponent,
+    HomeSidebarOptionsComponent,
     HomeToolbarComponent,
     HomeFooterComponent,
   ],
