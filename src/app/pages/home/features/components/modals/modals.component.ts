@@ -12,7 +12,8 @@ export class ModalsComponent implements OnInit {
   @ViewChild('modal') modal: TemplateRef<any>;
   modalRef: MatDialogRef<any>;
 
-  constructor(private modalService: ModalService, private confirmationModalService: ConfirmationModalService) {
+  constructor(private modalService: ModalService,
+              private confirmationModalService: ConfirmationModalService) {
   }
 
   ngOnInit(): void {

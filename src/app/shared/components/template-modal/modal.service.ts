@@ -2,23 +2,21 @@ import {Injectable, TemplateRef} from '@angular/core';
 import {MatDialog, MatDialogConfig, MatDialogRef} from '@angular/material/dialog';
 import {TemplateModalComponent} from './template-modal.component';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class ModalService {
 
   constructor(private dialog: MatDialog) {
   }
 
-  private static fetchOptions({width, minWidth, minHeight, height, disableClose, panelClass}: DialogOptions):
-    Pick<MatDialogConfig<DialogData>, 'width' | 'minWidth' | 'minHeight' | 'height' | 'disableClose' | 'panelClass'> {
+  private static fetchOptions({width, minWidth, height, minHeight, disableClose, panelClass}: DialogOptions):
+    Pick<MatDialogConfig<DialogData>, 'width' | 'minWidth' | 'height' | 'minHeight' | 'disableClose' | 'panelClass'> {
     return {
       minWidth: `${minWidth}px`,
-      width: width === 'auto' ? `auto` : `${width}px`,
+      width: width === 'auto' ? 'auto' : `${width}px`,
       minHeight: `${minHeight}px`,
-      height: height === 'auto' ? `auto` : `${height}px`,
+      height: height === 'auto' ? 'auto' : `${height}px`,
       disableClose,
-      panelClass: [panelClass, 'opercoll-popup-panel']
+      panelClass: [panelClass, 'template-popup-panel']
     };
   }
 
@@ -52,8 +50,8 @@ export interface DialogData {
 export interface DialogOptions {
   width?: number | string;
   minWidth?: number | string;
-  minHeight?: number | string;
   height?: number | string;
+  minHeight?: number | string;
   disableClose?: boolean;
   panelClass?: string;
 }

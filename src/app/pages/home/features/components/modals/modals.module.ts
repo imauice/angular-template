@@ -4,6 +4,7 @@ import {ModalsComponent} from './modals.component';
 import {RouterModule, Routes} from '@angular/router';
 import {FlexModule} from '@angular/flex-layout';
 import {MatButtonModule} from '@angular/material/button';
+import {TemplateModalModule} from '../../../../../shared/components/template-modal/template-modal.module';
 
 const routes: Routes = [
   {
@@ -18,7 +19,8 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
     FlexModule,
-    MatButtonModule
+    MatButtonModule,
+    TemplateModalModule
   ]
 })
 export class ModalsModule {
